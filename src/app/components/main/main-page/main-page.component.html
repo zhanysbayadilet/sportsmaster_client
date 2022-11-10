@@ -28,85 +28,12 @@
     <p>Lorem ipsum dolor sit, amet, consectetur adipisicing elit.</p>
   </div>
   <div class="content">
-
-    <a class="box" href="/tournaments">
+    <a *ngFor="let tournament of tournamentsArr | slice:0:6;" class="box" href="/tournament">
       <div class="imgBx">
-        <img src="assets/img/sport1.png">
+        <img src="{{tournament.img}}">
       </div>
       <div class="text">
-        <h3>Football</h3>
-      </div>
-    </a>
-
-    <a class="box" href="/tournaments">
-      <div class="imgBx">
-        <img src="assets/img/sport2.png">
-      </div>
-      <div class="text">
-        <h3>Cricket</h3>
-      </div>
-    </a>
-
-    <a class="box" href="/tournaments">
-      <div class="imgBx">
-        <img src="assets/img/sport3.png">
-      </div>
-      <div class="text">
-        <h3>Hockey</h3>
-      </div>
-    </a>
-
-    <a class="box" href="/tournaments">
-      <div class="imgBx">
-        <img src="assets/img/sport4.png">
-      </div>
-      <div class="text">
-        <h3>Tennis</h3>
-      </div>
-    </a>
-
-    <a class="box" href="/tournaments">
-      <div class="imgBx">
-        <img src="assets/img/sport5.png">
-      </div>
-      <div class="text">
-        <h3>Volleyball</h3>
-      </div>
-    </a>
-
-    <a class="box" href="/tournaments">
-      <div class="imgBx">
-        <img src="assets/img/sport6.png">
-      </div>
-      <div class="text">
-        <h3>Table Tennis</h3>
-      </div>
-    </a>
-
-    <a class="box" href="/tournaments">
-      <div class="imgBx">
-        <img src="assets/img/sport7.png">
-      </div>
-      <div class="text">
-        <h3>Basketball</h3>
-      </div>
-    </a>
-
-    <a class="box" href="/tournaments">
-      <div class="imgBx">
-        <img src="assets/img/sport8.png">
-      </div>
-      <div class="text">
-        <h3>Baseball</h3>
-      </div>
-    </a>
-
-    <a class="box" href="/tournaments">
-      <div class="imgBx">
-        <img src="assets/img/sport9.png">
-      </div>
-      <div class="text">
-        <h3>Golf</h3>
+        <h3>{{tournament.tournament_name}}</h3>
       </div>
     </a>
   </div>
