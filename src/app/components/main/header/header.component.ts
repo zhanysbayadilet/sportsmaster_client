@@ -10,6 +10,11 @@ export class HeaderComponent implements OnInit {
   constructor() { }
 
   ngOnInit(): void {
+    window.addEventListener('scroll', function(){
+      const header = document.querySelector('header');
+      // @ts-ignore
+      header.classList.toggle("sticky", window.scrollY > 0);
+    });
   }
 
 }
