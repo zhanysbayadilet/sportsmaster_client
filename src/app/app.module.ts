@@ -6,6 +6,7 @@ import { AppComponent } from './app.component';
 import { MainPageComponent } from './components/main/main-page/main-page.component';
 import { HeaderComponent } from './components/main/header/header.component';
 import { TournamentsComponent } from './components/tournaments/tournaments.component';
+import { Header2Component } from './components/main/header2/header2.component';
 import { TournamentComponent } from './components/tournament/tournament.component';
 
 @NgModule({
@@ -14,7 +15,8 @@ import { TournamentComponent } from './components/tournament/tournament.componen
     MainPageComponent,
     HeaderComponent,
     TournamentsComponent,
-    TournamentComponent
+    TournamentComponent,
+    Header2Component
   ],
   imports: [
     BrowserModule,
