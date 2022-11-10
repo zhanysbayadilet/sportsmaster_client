@@ -4,90 +4,16 @@
     <p>Lorem ipsum dolor sit, amet, consectetur adipisicing elit.</p>
   </div>
   <div class="content">
-
-    <a class="box" href="/tournament">
+    <a *ngFor="let tournament of tournamentsArr" class="box" href="/tournament">
       <div class="imgBx">
-        <img src="assets/img/sport1.png">
+        <img src="{{tournament.img}}">
       </div>
       <div class="text">
-        <h3>Almaty Football</h3>
-      </div>
-    </a>
-
-    <a class="box" href="/tournament">
-      <div class="imgBx">
-        <img src="assets/img/sport1.png">
-      </div>
-      <div class="text">
-        <h3>Almaty Football</h3>
-      </div>
-    </a>
-
-    <a class="box" href="/tournament">
-      <div class="imgBx">
-        <img src="assets/img/sport1.png">
-      </div>
-      <div class="text">
-        <h3>Almaty Football</h3>
-      </div>
-    </a>
-
-    <a class="box" href="/tournament">
-      <div class="imgBx">
-        <img src="assets/img/sport1.png">
-      </div>
-      <div class="text">
-        <h3>Almaty Football</h3>
-      </div>
-    </a>
-
-    <a class="box" href="/tournament">
-      <div class="imgBx">
-        <img src="assets/img/sport1.png">
-      </div>
-      <div class="text">
-        <h3>Almaty Football</h3>
-      </div>
-    </a>
-
-    <a class="box" href="/tournament">
-      <div class="imgBx">
-        <img src="assets/img/sport1.png">
-      </div>
-      <div class="text">
-        <h3>Almaty Football</h3>
-      </div>
-    </a>
-
-    <a class="box" href="/tournament">
-      <div class="imgBx">
-        <img src="assets/img/sport1.png">
-      </div>
-      <div class="text">
-        <h3>Almaty Football</h3>
-      </div>
-    </a>
-
-    <a class="box" href="/tournament">
-      <div class="imgBx">
-        <img src="assets/img/sport1.png">
-      </div>
-      <div class="text">
-        <h3>Almaty Football</h3>
-      </div>
-    </a>
-
-    <a class="box" href="/tournament">
-      <div class="imgBx">
-        <img src="assets/img/sport1.png">
-      </div>
-      <div class="text">
-        <h3>Almaty Football</h3>
+        <h3>{{tournament.tournament_name}}</h3>
       </div>
     </a>
   </div>
-
   <div class="title">
-    <a href="#" class="btn">View All</a>
+    <a href="/" class="btn">Go to back</a>
   </div>
 </section>

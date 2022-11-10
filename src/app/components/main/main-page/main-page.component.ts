@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import {ITournament} from "../../../models/tournament";
+import {tournaments} from "../../../data/tournaments";
 
 @Component({
   selector: 'app-main-page',
@@ -7,9 +9,12 @@ import { Component, OnInit } from '@angular/core';
 })
 export class MainPageComponent implements OnInit {
 
+  tournamentsArr: ITournament[] = tournaments
+
   constructor() { }
 
   ngOnInit(): void {
+
   }
 
 }
