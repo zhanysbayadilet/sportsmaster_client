@@ -8,6 +8,8 @@ import { HeaderComponent } from './components/main/header/header.component';
 import { TournamentsComponent } from './components/tournaments/tournaments.component';
 import { Header2Component } from './components/main/header2/header2.component';
 import { TournamentComponent } from './components/tournament/tournament.component';
+import {FilterProductsPipe} from "./components/pipes/filter-tournament.pipe";
+import {FormsModule} from "@angular/forms";
 
 @NgModule({
   declarations: [
@@ -16,11 +18,13 @@ import { TournamentComponent } from './components/tournament/tournament.componen
     HeaderComponent,
     TournamentsComponent,
     TournamentComponent,
-    Header2Component
+    Header2Component,
+    FilterProductsPipe
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

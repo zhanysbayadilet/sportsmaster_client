@@ -1,9 +1,24 @@
 <app-header2></app-header2>
 
 <section class="tournamentsPage">
-  <div class="tournament">
-    <div class="tournamentName">Hello</div>
-    <div class="tournamentDate">20.302.13</div>
-    <div class="tournamentPrizeFound">300$</div>
+  <div class="filterBox">
+    <input type="text" style="width: 70%; margin: 0 auto;" placeholder="Filter products..."
+           [(ngModel)]="term"
+    >
   </div>
+
+  <a *ngFor="let tournament of tournaments | filterProducts: term" class="tournament" href="#">
+    <div class="img">
+      <img src="{{tournament.img}}">
+    </div>
+    <div class="tournamentName">
+      <p>{{tournament.tournament_name}}</p>
+    </div>
+    <div class="tournamentDate">
+      <p>{{tournament.tournament_date}}</p>
+    </div>
+    <div class="tournamentPrizeFound">
+      <p>{{tournament.prize_fund}}</p>
+    </div>
+  </a>
 </section>
