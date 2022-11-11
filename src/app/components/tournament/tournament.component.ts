@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import {ITournament} from "../../models/tournament";
+import {tournaments} from "../../data/tournaments";
 
 @Component({
   selector: 'app-tournament',
@@ -6,6 +8,8 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./tournament.component.css']
 })
 export class TournamentComponent implements OnInit {
+
+  tournaments: ITournament[] = tournaments;
 
   constructor() { }
 

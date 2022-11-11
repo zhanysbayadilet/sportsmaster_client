@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import {ITournament} from "../../models/tournament";
-import {tournaments} from "../../data/tournaments";
+import {ICategory} from "../../models/category";
+import {categories} from "../../data/categories";
 
 
 @Component({
@@ -10,7 +10,7 @@ import {tournaments} from "../../data/tournaments";
 })
 export class TournamentsComponent implements OnInit {
 
-  tournamentsArr: ITournament[] = tournaments;
+  categories: ICategory[] = categories;
 
   constructor() { }
 

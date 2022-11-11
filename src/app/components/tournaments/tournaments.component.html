@@ -6,12 +6,12 @@
     <p>Lorem ipsum dolor sit, amet, consectetur adipisicing elit.</p>
   </div>
   <div class="content">
-    <a *ngFor="let tournament of tournamentsArr" class="box" href="/tournament">
+    <a *ngFor="let category of categories" class="box" href="/tournament">
       <div class="imgBx">
-        <img src="{{tournament.img}}">
+        <img src="{{category.img}}">
       </div>
       <div class="text">
-        <h3>{{tournament.tournament_name}}</h3>
+        <h3>{{category.category_name}}</h3>
       </div>
     </a>
   </div>
