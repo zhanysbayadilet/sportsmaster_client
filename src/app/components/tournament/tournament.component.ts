@@ -10,6 +10,7 @@ import {tournaments} from "../../data/tournaments";
 export class TournamentComponent implements OnInit {
 
   tournaments: ITournament[] = tournaments;
+  term = ''
 
   constructor() { }
 
